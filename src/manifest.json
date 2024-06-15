@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Container Bookmarks",
+  "version": "1.2.4",
+  "description": "Allows you to open bookmarks in containers.",
+  "icons": {
+    "48": "icon.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "options_ui": {
+    "browser_style": true,
+    "page": "./options/options.html"
+  },
+  "permissions": [
+    "<all_urls>",
+    "bookmarks",
+    "contextualIdentities",
+    "menus",
+    "storage",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{423ff643-46b3-4296-b3a7-ff2658fd1bab}"
+    }
+  }
+}

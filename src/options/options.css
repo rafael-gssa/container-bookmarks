@@ -1,0 +1,23 @@
+body {
+  overflow: hidden;
+}
+
+.browser-style input[type="text"] {
+  width: 100%;
+}
+
+.panel-formElements-item {
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.panel-formElements-item label {
+  text-align: left;
+}
+
+.panel-formElements-section {
+  background-color: rgba(69, 161, 255, 0.2);
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 10px;
+}

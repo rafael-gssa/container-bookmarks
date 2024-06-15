@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>New Container Bookmark</title>
+    <link href="chrome://browser/content/extension.css" rel="stylesheet" type="text/css">
+    <link href="./popup.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header class="panel-section panel-section-header">
+      <div class="text-section-header" id="title-header">New Container Bookmark</div>
+    </header>
+    <div class="panel-section panel-section-formElements">
+      <div class="panel-formElements-item">
+        <label for="name-field">Name:</label>
+        <input id="name-field" type="text"/>
+      </div>
+      <div class="panel-formElements-item">
+        <label for="url-field">URL:</label>
+        <input id="url-field" type="text"/>
+      </div>
+      <div class="panel-formElements-item">
+        <label for="folder-dropdown">Folder:</label>
+        <select id="folder-dropdown"></select>
+      </div>
+      <div class="panel-formElements-item">
+        <label for="container-dropdown">Container:</label>
+        <select id="container-dropdown">
+          <option value="none">None</option>
+        </select>
+      </div>
+      <div class="panel-formElements-section hidden" id="warning-section">
+        <div>For the redirection to work, open the link below in the desired container, then open the Multi-Account Containers menu and enable "Always open in container".</div>
+        <a href="" id="warning-link" target="_blank"></a>
+      </div>
+    </div>
+    <footer class="panel-section panel-section-footer">
+      <button class="panel-section-footer-button" id="cancel-button">Cancel</button>
+      <div class="panel-section-footer-separator"></div>
+      <button class="panel-section-footer-button default" id="done-button">Done</button>
+    </footer>
+  </body>
+  <script src="./popup.js" type="text/javascript"></script>
+</html>
